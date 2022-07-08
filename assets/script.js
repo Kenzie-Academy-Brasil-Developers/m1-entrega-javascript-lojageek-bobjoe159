@@ -58,6 +58,11 @@ createActionItem(
 )
 createPaintingItem('assets/img/painting/clock.jpg', 'Relógio', 15)
 createPaintingItem('assets/img/painting/gamepad.jpg', 'Gamepad', 15)
+createPaintingItem(
+  'https://pbs.twimg.com/media/FMnvGwMX0AYAgYu.jpg',
+  'NFT Rat Jiraya',
+  15
+)
 createPaintingItem('assets/img/painting/personagem.jpg', 'Personagem', 15)
 createPaintingItem(
   'https://pbs.twimg.com/media/FA3FaGvVQAcaXO_.jpg',
