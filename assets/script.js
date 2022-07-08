@@ -1,3 +1,5 @@
+//== LISTA QUE IRÁ RECEBER O OBJETO ==//
+
 let listFigure = []
 let listPainting = []
 
@@ -19,7 +21,8 @@ function createActionItem(imagem, nome, valor) {
   })
 }
 
-//==CRIANDO PRODUTOS ATRAVÉS DA FUNÇÃO CREATEACTION==//
+//==CRIANDO PRODUTOS ATRAVÉS DA FUNÇÃO CREATEACTION ==//
+
 createActionItem(`assets/img/actions/dragonballpersonagem.jpg`, 'Goku', 15)
 createActionItem(`assets/img/actions/animewoman.jpg`, 'Anime Woman', 15)
 createActionItem(
@@ -44,7 +47,7 @@ createActionItem(
 )
 createActionItem(`assets/img/actions/starwarspersonagem.jpg`, 'Baby Yoda', 15)
 createActionItem(
-  `https://ae01.alicdn.com/kf/H86dd71cb1b4347a1b4b39c6bf305f8fft/Boneco-colecion-vel-do-naruto-brinquedo-de-pvc-com-est-tua-e-dor-em-akatsuki-270mm.jpg_Q90.jpg_.webp`,
+  `https://cf.shopee.com.br/file/ac88a5cb6154e540a0ee3d5d0f0bf450`,
   'Pain',
   15
 )
@@ -77,9 +80,12 @@ createPaintingItem(
   15
 )
 
+//== RECEBENDO A TAG ATRAVÉS DA CLASSE DO HTML ==//
 let categoriaAction = document.getElementsByClassName('categoriaAction')[0]
 let categoriaPaintings =
   document.getElementsByClassName('categoriaPaintings')[0]
+
+//== FUNÇÃO PRA LISTAR PRODUTO POR CATEGORIA ==//
 
 function listarProduto(listaProdutos, vitrine) {
   for (let i = 0; i < listaProdutos.length; i++) {
@@ -95,11 +101,12 @@ function listarProduto(listaProdutos, vitrine) {
   }
 }
 
-console.log(categoriaAction)
-console.log(categoriaPaintings)
+//== LISTANDO PRODUTOS PASSANDO OS PARÂMETROS CORRETOS ==//
 
 listarProduto(listFigure, categoriaAction)
 listarProduto(listPainting, categoriaPaintings)
+
+//== CRIANDO O PRODUTO PARA APARECER NA TELA DO USUÁRIO POR CATEGORIA ACTION ==//
 
 function criarCardProdutoAction(produto) {
   let listaProdutos = document.getElementsByClassName('listaProdutosAction')[0]
@@ -125,12 +132,14 @@ function criarCardProdutoAction(produto) {
   tagNome.innerText = nome
   tagValor.innerText = `R$ ${valor}`.replace('.', ',')
 
+  //==ADICIONANDO A CLASSE COM A ESTILIZAÇÃO==//
   divCards.classList.add('card')
-
   divCards.append(tagFigure, tagNome, tagValor)
 
   return cardsConteudo
 }
+
+//== CRIANDO O PRODUTO PARA APARECER NA TELA DO USUÁRIO POR CATEGORIA PAINT ==//
 
 function criarCardProdutoPaint(produto) {
   let listaProdutos = document.getElementsByClassName('listaProdutosPaint')[0]
@@ -155,15 +164,9 @@ function criarCardProdutoPaint(produto) {
   tagNome.innerText = nome
   tagValor.innerText = `R$ ${valor}`.replace('.', ',')
 
+  //==ADICIONANDO A CLASSE COM A ESTILIZAÇÃO==//
   divCards.classList.add('card')
-
   divCards.append(tagFigure, tagNome, tagValor)
 
   return cardsConteudo
 }
-
-/* <div class="card">
-<figure></figure>
-<h3>Nome</h3>
-<p>Valor</p>
-</div> */
