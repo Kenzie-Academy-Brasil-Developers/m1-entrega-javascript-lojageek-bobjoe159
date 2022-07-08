@@ -24,6 +24,11 @@ function createActionItem(imagem, nome, valor) {
 //==CRIANDO PRODUTOS ATRAVÉS DA FUNÇÃO CREATEACTION ==//
 
 createActionItem(`assets/img/actions/dragonballpersonagem.jpg`, 'Goku', 15)
+createActionItem(
+  `https://www.kindpng.com/picc/m/85-858971_sh-figuarts-ssg-vegeta-hd-png-download.png`,
+  'Vegeta',
+  15
+)
 createActionItem(`assets/img/actions/animewoman.jpg`, 'Anime Woman', 15)
 createActionItem(
   `https://m.media-amazon.com/images/I/715zpYjd9sL._AC_SX425_.jpg`,
@@ -47,7 +52,7 @@ createActionItem(
 )
 createActionItem(`assets/img/actions/starwarspersonagem.jpg`, 'Baby Yoda', 15)
 createActionItem(
-  `https://cf.shopee.com.br/file/ac88a5cb6154e540a0ee3d5d0f0bf450`,
+  `https://www.ubuy.vn/productimg/?image=aHR0cHM6Ly9pbWFnZXMtbmEuc3NsLWltYWdlcy1hbWF6b24uY29tL2ltYWdlcy9JLzMxOG5TM2VoejVMLmpwZw.jpg`,
   'Pain',
   15
 )
