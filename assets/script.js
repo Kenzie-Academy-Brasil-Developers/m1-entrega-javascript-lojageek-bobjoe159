@@ -1,6 +1,8 @@
 let listFigure = []
 let listPainting = []
 
+//== FUNÇÕES PRA CRIAR O ITEM COMO OBJETO E COLOCAR EM UM ARRAY ==//
+
 function createPaintingItem(imagem, nome, valor) {
   listPainting.push({
     imagem: imagem,
@@ -17,6 +19,7 @@ function createActionItem(imagem, nome, valor) {
   })
 }
 
+//==CRIANDO PRODUTOS ATRAVÉS DA FUNÇÃO CREATEACTION==//
 createActionItem(`assets/img/actions/dragonballpersonagem.jpg`, 'Goku', 15)
 createActionItem(`assets/img/actions/animewoman.jpg`, 'Anime Woman', 15)
 createActionItem(
@@ -40,13 +43,11 @@ createActionItem(
   15
 )
 createActionItem(`assets/img/actions/starwarspersonagem.jpg`, 'Baby Yoda', 15)
-
 createActionItem(
   `https://ae01.alicdn.com/kf/H86dd71cb1b4347a1b4b39c6bf305f8fft/Boneco-colecion-vel-do-naruto-brinquedo-de-pvc-com-est-tua-e-dor-em-akatsuki-270mm.jpg_Q90.jpg_.webp`,
   'Pain',
   15
 )
-
 createPaintingItem('assets/img/painting/clock.jpg', 'Relógio', 15)
 createPaintingItem('assets/img/painting/gamepad.jpg', 'Gamepad', 15)
 createPaintingItem('assets/img/painting/personagem.jpg', 'Personagem', 15)
